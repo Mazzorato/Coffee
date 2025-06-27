@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ma première page</title>
-    <meta charset="UTF-8"> <!-- Définit la table de caractères à utiliser et permet la présence, entre autres, des accents sur les lettres-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1>Bienvenue sur ma page</h1>
-    <p>Ceci est un paragraphe.</p>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="Home">Home</a>
+                <a href="Coffee">Coffee</a>
+                <a href="Bakery">Bakery</a>
+                <a href="Shop">Shop</a>
+                <a href="About">About</a>
+                <a href="Login">Login</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            
+            <p>Welcome!</p>
+            <h1>We serve the richest Coffee <br>in the city!</h1></h1>
+        </div>
+    </section>
+    
+    <section class="specialties">
+        <div class="container">
+            <div class="specialties-item">Hot Coffee</div>
+            <div class="specialties-item">Cold Coffee</div>
+            <div class="specialties-item">Cup Coffee</div>
+            <div class="specialties-item">Dessert</div>
+          </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Special Coffee</h2>
+        <div class="products-grid">
+        <div class="products-card">
+        <img src="https://unsplash.it/100/100" alt="Lungo Coffee">
+        <h3>Lungo Coffee</h3>
+        <p>1.99€</p>
+        <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-grid">
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Dalgona Coffee">
+            <h3>Dalgona Coffee</h3>
+            <p>1.59€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-grid">
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Iced Coffee">
+            <h3>Iced Coffee</h3>
+            <p>1.49€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-grid">
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Filter Coffee">
+            <h3>Filter Coffee</h3>
+            <p>0.59€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Speciale Dessert</h2>
+        <div class="products-grid">
+            <div class="products-card">
+                <img src="https://unsplash.it/100/100" alt="Gulab Jamun">
+                <h3>Gulab Jamun</h3>
+                <p>1.99€</p>
+                <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Tiramisu">
+            <h3>Chocolate Tiramisu</h3>
+            <p>2.50€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Churros">
+            <h3>Churros</h3>
+            <p>1.70€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+        <div class="products-card">
+            <img src="https://unsplash.it/100/100" alt="Australian Lamingtons">
+            <h3>Australian Lamingtons</h3>
+            <p>2.80€</p>
+            <button class="button">Commandez maintenant</button>
+        </div>
+    </section>
+
+    <section class="explore">
+        <h2>Découvrez nos meilleurs grains de café</h2>
+        <button class="button">Explore nos produits</button>
+    </section>
+    
+    <section class="customers">
+        <h2>Nos clients satisfaits</h2>
+        <div class="customers-grid">
+            <div class="customers">
+                <p>J'adore le goût et le service amical !</p>
+                <h4>Jane Adams</h4>
+        </div>
+        <div class="customers">
+            <p>Le meilleur café de la ville, sans aucun doute.</p>
+            <h4>Sam Williams</h4>
+        </div>
+        <div class="customers">
+            <p>Desserts et café incroyables, fortement recommandés.</p>
+            <h4>Angela Gonzalez</h4>
+        </div>
+    </section>
+
+    <section class="promotions">
+        <h2>Rejoignez-nous et obtenez 15 % de réduction !</h2>
+        <input type="email" placeholder="Entrez votre email">
+        <button class="button">
+            
+        </button>
+    </section>
+    
+    <footer class="footer">
+        <div class="container footer-content">
+            <h3>L'heure du café</h3>
+            <p>Un endroit chaleureux pour savourer le meilleur café de la ville.</p>
+        </div>
+        <div class="footer-column">
+           <footer class="footer">
+        <div class="container">
+            <nav class="nav">
+                <a href="Privacy">Privacy</a>
+                <a href="Services">Services</a>
+                <a href="About us">About us</a>
+                <a href="Information">Information</a>
+                <a href="Social Media">Social Media</a>
+                
+            </nav>
+        </div> 
+        </div>
+    </footer>
+
 </body>
 </html>
