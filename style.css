@@ -5,8 +5,7 @@
 
 }
 
-body,
-html {
+body, html {
     background-color: #f5f5dc;
     font-family: Helvetica;
     line-height: 1.6;
@@ -15,14 +14,19 @@ html {
 
 
 .header {
-    background-image: url(Coffee-welcome.jpg);
+    
     height: 80vh;
     padding: 20px;
     display: flex;
     justify-content: center;
-
+    
     top: 0%;
     z-index: 1000;
+}
+
+.background {
+    background-image: url(Coffee-welcome.jpg);
+    min-height: 100vh;
 }
 
 .container {
@@ -46,19 +50,20 @@ html {
 }
 
 .hero {
-
-    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     color: white;
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    ;
     padding: 40px;
     border-radius: 10px;
+    
 }
 
 .hero h1 {
