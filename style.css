@@ -5,7 +5,8 @@
 
 }
 
-body, html {
+body,
+html {
     background-color: #f5f5dc;
     font-family: Helvetica;
     line-height: 1.6;
@@ -14,32 +15,30 @@ body, html {
 
 
 .header {
-    
-    height: 80vh;
+
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
     
-    top: 0%;
-    z-index: 1000;
+
 }
 
-.background {
-    background-image: url(Coffee-welcome.jpg);
-    min-height: 100vh;
+.header h1 {
+    text-align: left;
 }
 
 .container {
     display: flex;
-    position: sticky;
-    z-index: 100;
+    justify-content: center;
+
 }
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: baseline;
 
-    padding: 20px;
 }
 
 .nav a {
@@ -49,22 +48,33 @@ body, html {
     font-weight: bold;
 }
 
+
+
+button {
+    padding: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    padding: 40px;
     text-align: center;
     
-    color: white;
+    background-image: url(Coffee-welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
 }
 
-.hero-content {
-    position: fixed;
-    ;
-    padding: 40px;
-    border-radius: 10px;
-    
-}
+
 
 .hero h1 {
     font-size: 4rem;
@@ -76,22 +86,125 @@ body, html {
     margin-bottom: 20px;
 }
 
+.button-commande {
+    background-color: white;
+    border:#333;
+    border-radius: 20px 20px;
+}
+
 .button {
-    display: inline-block;
+    
     background-color: #c59d5f;
     color: white;
     padding: 12px 30px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0, 3s;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .button:hover {
     background-color: #a9824b;
 }
 
-.about {
-    padding: 80px 20px;
+.specialties {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
     background-color: white;
     text-align: center;
+}
+
+.specialties-item {
+    background-color: #c59d5f;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.products-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.products-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.explore {
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.customers {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.customers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.customer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.promotions {
+    padding: 40px;
+    text-align: center;
+    background-color: #c59d5f;
+    color: white;
+}
+
+.promotions input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer .nav {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer .nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
